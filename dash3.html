@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard de Publicidad</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 40px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .dashboard-grid {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .kpi {
+            background-color: #fff;
+            flex: 1 1 calc(33.333% - 20px);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            min-width: 280px;
+            box-sizing: border-box;
+        }
+
+        .kpi h2 {
+            font-size: 1.2em;
+            color: #005b96;
+        }
+
+        .kpi img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .interpretacion {
+            background-color: #eef6ff;
+            padding: 10px;
+            border-left: 4px solid #3399ff;
+            margin-top: 15px;
+            border-radius: 5px;
+            font-size: 0.95em;
+        }
+
+        @media (max-width: 900px) {
+            .kpi {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Objetivo: Aumentar el alcance, ventas e impresiones en instagram y facebook en un 20% al implementar el uso de publicidad pagada durante 5 días.</h1>
+
+    <div class="kpi">
+        <h2>KPI 1: Porcentaje de Incremento en el alcance durante el pago de publicidad.</h2>
+        <h3>Formulas utilizadas:</h3>
+	<p>1. Diferencia de Alcance= Alcance con Publicidad−Alcance Sin Publicidad<br> 2. Porcentaje de Incremento= (diferencia de alcance / alcance sin publicidad) x 100</p>
+        <img src="C:\Users\pc\OneDrive\Pictures\Screenshots\KPI 1.png" alt="Gráfica KPI 1" width="900" height="500">
+	<table>
+	   <tr>
+	       <th>Variable</th>
+	       <th>Descripción</th>
+	   </tr>
+	   <tr> 
+	       <td>Periodo</td>
+	       <td>Clasifica las fechas en los periodos Pre-Publicidad (09/09/2024 - 21/10/2024), Durante Publicidad (22/10/2024 - 27/10/2024) y Post-Publicidad (28/10/2024 - 15/11/2024).</td>
+           </tr>
+           <tr>
+	       <td>Red de alcance</td>
+               <td>Muestra a qué red social pertenece el alcance.</td>
+           </tr>
+           <tr>
+	       <td>Cantidad</td>
+               <td>Muestra la cantidad de alcance alcance por día independientemente de la publicación.</td>
+	   </tr>
+        </table>
+        <div class="interpretacion">
+	    <h3>Interpretaciones:</h3>
+            <p>La gráfica muestra que el alcance incrementó un 683% en Facebook y 338% en Instagram respecto al promedio del periodo orgánico. El periodo de publicidad pagada superó el 20% esperado en un 663% en Facebook y 318% en instagram. Cabe mencionar que la cantidad de datos en cada periodo difiere significativamente, ya que solo se pagaron 5 días de publicidad, lo cual puede afectar la exactitud de los resultados.</p>
+        </div>
+    </div>
+
+    <div class="kpi">
+        <h2>KPI 2: Comparación de ventas previas y posteriores a la implementación de publicidad pagada, total de ventas con y sin publicidad pagada.</h2>
+        <h3>Fórmulas Utilizadas</h3>
+	<p>1. (Ventas posteriores con publicidad - Ventas previas a la publicidad) / Ventas previas sin publicidad * 100</p>
+        <img src="C:\Users\pc\OneDrive\Pictures\Screenshots\KPI 2.png" alt="Gráfica KPI 2" width:"900" height:"500" >
+	<table>
+	   <tr>
+	       <th>Variable</th>
+	       <th>Descripción</th>
+	   </tr>
+	   <tr> 
+	       <td>Ventas previas sin publicidad</td>
+	       <td>Ventas realizadas antes de implementar publicidad pagada.</td>
+           </tr>
+           <tr>
+	       <td>Ventas posteriores con publicidad</td>
+               <td>Ventas realizadas despúes de implementar publicidad pagada.</td>
+           </tr>
+           <tr>
+	       <td>Ventas posteriores sin Publicidad</td>
+               <td>Ventas realizadas despues de terminar el periodo de publicidad pagada.</td>
+	   </tr>
+        </table>
+        <div class="interpretacion">
+	    <h3>Interpretaciones</h3>
+            <p>La grafica nos muestra la cantidad de dinero recaudado antes de implementar publicidad pagada en una barra, en la siguiente barra nos muestra la cantidad de dinero recaudado una vez implementada la publicidad pagada(representado en colo azul oscuro) y la cantidad de dinero recaudado despues de que se terminara el periodo de publicidad pagada(representado en azul), se puede interpretar que durante el periodo de publicidad pagada las ventas incrementaron un 22.59% y desde que iniciaron la publicidad pagada hasta el dia de hoy ya sin publicidad pagada han logrado recaudar un total de 805 pesos, los datos pueden diferir significativamente, pues el periodo de publicidad pagada fue de tan solo 5 dias y las ventas posteriores al periodo de publicidad fueron hechas al mismo cliente.</p>
+        </div>
+    </div>
+
+    <div class="kpi">
+        <h2>KPI 3:  Costo por Conversión (CPC) por venta generada, tanto sin publicidad como con publicidad a través de redes sociales.</h2>
+        <h3>Fórmulas Utilizadas</h3>
+	<p>1. Con publicidad: CPC = Costo total de la publicidad (campaña) / Número total de conversiones.<br> 2. Sin publicidad: Costo sin publicidad = Costo unitario × Cantidad de productos vendidos sin publicidad.</p>
+        <img src="C:\Users\pc\OneDrive\Pictures\Screenshots\KPI 3.png" alt="Gráfica KPI 3" width:"900" height:"500">
+	<table>
+	   <tr>
+	       <th>Variable</th>
+	       <th>Descripción</th>
+	   </tr>
+	   <tr> 
+	       <td>Costo Total de Publicidad</td>
+	       <td>El gasto total realizado en la campaña durante el periodo de publicidad pagada.</td>
+           </tr>
+           <tr>
+	       <td>Cantidad de Conversiones</td>
+               <td>Las conversiones que se generaron gracias a la campaña, es decir, la cantidad de compras.</td>
+           </tr>
+           <tr>
+	       <td>Períodos con y sin Publicidad</td>
+               <td>Los períodos donde fue pagada la publicidad (en este caso, 5 días) y los días que no había publicidad.</td>
+	   </tr>
+        </table>
+        <div class="interpretacion">
+	    <h3>Interpretaciones</h3>
+            <p>La gráfica nos muestra un CPC alto durante la publicidad, es significa que la empresa está gastando 50 unidades monetarias en promedio, lo que indica que la campaña no fue tan efectiva. En contraste, el CPC sin invertir en publicidad es considerablemente más bajo con un 5.59 unidades monetarias. Esto sugiere que la campaña de publicidad está siendo costosa en términos de retorno por cada conversión obtenida.</p>
+        </div>
+    </div>
+
+</body>
+</html>
